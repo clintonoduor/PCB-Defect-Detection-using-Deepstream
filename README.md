@@ -15,10 +15,10 @@ The defects include:
 
 The dataset used in this project has been sourced from 
 
-## Model Training
-## Generating wts & cfg files for TensorRT engine
-## Installing Deepstream 6.0 on Jetson Xavier
-## Deepstream Config files
-## Running the application
-## Improving Perfomance
+### Model Training
+### Generating wts & cfg files for TensorRT engine
+### Installing Deepstream 6.0 on Jetson Xavier
+### Deepstream Config files
+### Running the application
+### Improving Perfomance
 
