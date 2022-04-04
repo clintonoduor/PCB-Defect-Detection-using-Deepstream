@@ -9,9 +9,9 @@ The defects include:
 -  missing_hole
 -  mouse_bite
 -  open_circuit
-    *short
-    *spur
-    *spurious_copper
+-  short
+-  spur
+-  spurious_copper
 
 The dataset used in this project has been sourced from 
 
