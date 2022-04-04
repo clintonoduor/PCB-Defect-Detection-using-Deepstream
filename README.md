@@ -6,9 +6,9 @@ This project aims to use computer vision specifically object detection to automa
 [![Everything Is AWESOME](https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream/blob/main/pcbscreenshot.png?raw=true)](https://www.youtube.com/watch?v=op_TjAQFLfs)
 
 The defects include:
-    *missing_hole
-    *mouse_bite
-    *open_circuit
+    - missing_hole
+    -mouse_bite
+     -open_circuit
     *short
     *spur
     *spurious_copper
