@@ -16,7 +16,7 @@ The defects include:
 -  spur
 -  spurious_copper
 
-The dataset used in this project has been sourced from the Open Lab on Human Robot Interaction of Peking University.
+The dataset used in this project has been sourced from the [Open Lab on Human Robot Interaction](https://robotics.pkusz.edu.cn/resources/datasetENG/) of Peking University.
 
 ### Model Training
 ### Generating wts & cfg files for TensorRT engine
