@@ -9,12 +9,11 @@ This project aims to use computer vision specifically object detection to automa
 
 
 The defects include:
-      -  missing_hole
-      -  mouse_bite
-      -  open_circuit
-      -  short
-      -  spur
-      -  spurious_copper
+-  missing_hole  
+-  mouse_bite
+-  open_circuit
+-  short    
+-  spurious_copper
 
 The dataset used in this project has been sourced from the [Open Lab on Human Robot Interaction](https://robotics.pkusz.edu.cn/resources/datasetENG/) of Peking University.
 
