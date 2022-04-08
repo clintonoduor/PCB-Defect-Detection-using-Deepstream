@@ -20,7 +20,9 @@ The dataset used in this project has been sourced from the [Open Lab on Human Ro
 ### Model Training
 
 The model was trained using YoloV5 on Gogle Collab. 
+<br>
    <a href="https://colab.research.google.com/drive/14ETRA3gC7nVnPUXXj7qjund3eFIQMKvv"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+<br>
    
 ### Generating wts & cfg files for TensorRT engine
 ### Installing Deepstream 6.0 on Jetson Xavier
