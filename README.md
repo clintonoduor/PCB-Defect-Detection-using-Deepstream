@@ -26,6 +26,10 @@ This project aims to use computer vision specifically object detection to automa
 
 
 The defects include:
+
+<br>
+<div align="center">
+ 
 1.  missing hole 
 2.  mouse bite
 3.  open circuit
@@ -33,8 +37,9 @@ The defects include:
 5.  spurious copper
 6.  
 
+</div>
+<br>
 
-The dataset used in this project has been sourced from the [Open Lab on Human Robot Interaction](https://robotics.pkusz.edu.cn/resources/datasetENG/) of Peking University.
 
 ### Model Training
 
@@ -46,6 +51,8 @@ Click on the Colab link below to reproduce the training script and model on your
         <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-colab-small.png" width="15%"/>
     </a>
  </div>
+ <br>
+ The dataset used in this project has been sourced from the [Open Lab on Human Robot Interaction](https://robotics.pkusz.edu.cn/resources/datasetENG/) of Peking University.
 
    
 ### Generating wts & cfg files for TensorRT engine
