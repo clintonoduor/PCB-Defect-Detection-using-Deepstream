@@ -30,12 +30,11 @@ The defects include:
 <br>
 <div align="center">
  
-1.  missing hole 
-2.  mouse bite
-3.  open circuit
-4.  short    
-5.  spurious copper
-6.  
+  missing hole 
+  mouse bite
+  open circuit
+  short    
+  spurious copper  
 
 </div>
 <br>
