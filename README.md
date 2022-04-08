@@ -22,12 +22,12 @@ The dataset used in this project has been sourced from the [Open Lab on Human Ro
 The model was trained using YoloV5 on Gogle Collab, and dataset hosted in Roboflow to make it easier for others to be able to retrain the model in Colab without the hussle of reuploading the dataset.
 <br>
 YOLOv5 🚀 is a family of object detection architectures and models pretrained on the COCO dataset, and represents <a href="https://ultralytics.com">Ultralytics</a> open-source research into future vision AI methods, incorporating lessons learned and best practices evolved over thousands of hours of research and development.
-
 <br>
-<br>
-   <a href="https://colab.research.google.com/drive/14ETRA3gC7nVnPUXXj7qjund3eFIQMKvv"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
-<br>
-<br>
+<div align="center">
+    <a href="https://colab.research.google.com/drive/14ETRA3gC7nVnPUXXj7qjund3eFIQMKvv">
+        <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-colab-small.png" width="15%"/>
+    </a>
+ </div>
 
 The dataset for this project is pulled from Roboflow to make it easier for others to train the model without reuploading the dataset each time they want to train.
    
