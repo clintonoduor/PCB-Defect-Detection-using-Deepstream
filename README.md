@@ -40,8 +40,9 @@ Since YoloV5 is based on pytorch, we will first need to convert the outputs of o
 ```
 <br>
 
-**-w** is the path to our best.pt model while **-c** is the file to our input yaml file.
-
+```
+# **-w** is the path to our best.pt model while **-c** is the file to our input yaml file.
+```
 <br>
 
 The script will output a wts and cfg file that will put in our Deepstream-Yolo folder to build the TensorRT engine
