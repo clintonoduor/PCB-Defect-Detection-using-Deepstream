@@ -49,7 +49,32 @@ The script will output a wts and cfg file that we will put in our Deepstream-Yol
 ##### Deepstream Installation
 First install deepstream 6.0 using these [instructions](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_Quickstart.html).
 ##### Editing Deepstream Config Files
-jbswhe
+```
+[property]
+gpu-id=0
+net-scale-factor=0.0039215697906911373
+model-color-format=0
+custom-network-config=best.cfg
+model-file=best.wts
+model-engine-file=model_b1_gpu0_fp32.engine
+#int8-calib-file=calib.table
+labelfile-path=labels.txt
+batch-size=1
+network-mode=0
+num-detected-classes=6
+interval=0
+gie-unique-id=1
+process-mode=1
+network-type=0
+cluster-mode=4
+maintain-aspect-ratio=1
+parse-bbox-func-name=NvDsInferParseYolo
+custom-lib-path=nvdsinfer_custom_impl_Yolo/libnvdsinfer_custom_impl_Yolo.so
+engine-create-func-name=NvDsInferYoloCudaEngineGet
+
+[class-attrs-all]
+pre-cluster-threshold=0.5
+```
 ### Deepstream Config files
 ### Running the application
 ### Improving Perfomance
