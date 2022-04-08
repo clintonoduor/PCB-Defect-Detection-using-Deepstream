@@ -33,7 +33,8 @@ Click on the Colab link below to reproduce the training script and model on your
    
 ### Generating wts & cfg files for TensorRT engine
 
-Since YoloV5 is based on pytorch, we will first need to convert the outputs of our trained model to a format that can easily be converted to TensorRT engine on the Jetson. To achieve this, we will first put the gen_wts_yoloV5.py file to the YoloV5 folder and run the following script:
+Since YoloV5 is based on pytorch, we will first need to convert the outputs of our trained model to a format that can easily be converted to TensorRT engine on the Jetson. <br>
+To do this, we will first put the gen_wts_yoloV5.py file to the YoloV5 folder and run the following script:
 
 ```
 !python3 gen_wts_yoloV5.py -w /content/yolov5/runs/train/yolov5s_results/weights/best.pt -c /content/yolov5/models/custom_yolov5s.yaml
