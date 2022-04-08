@@ -1,4 +1,9 @@
+<div align="center">
+
 [![Everything Is AWESOME](https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream/blob/main/pcbscreenshot.png?raw=true)](https://www.youtube.com/watch?v=op_TjAQFLfs)
+ 
+</div>
+<br>
 
 
 # PCB-Defect-Detection-using-Deepstream
