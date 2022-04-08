@@ -19,11 +19,14 @@ The dataset used in this project has been sourced from the [Open Lab on Human Ro
 
 ### Model Training
 
-The model was trained using YoloV5 on Gogle Collab. 
+The model was trained using YoloV5 on Gogle Collab, and dataset hosted in Roboflow to make it easier for others to be able to retrain the model in Colab without the hussle of reuploading the dataset. YOLOv5 🚀 is a family of object detection architectures and models pretrained on the COCO dataset, and represents <a href="https://ultralytics.com">Ultralytics</a> open-source research into future vision AI methods, incorporating lessons learned and best practices evolved over thousands of hours of research and development.
+
 <br>
 <br>
    <a href="https://colab.research.google.com/drive/14ETRA3gC7nVnPUXXj7qjund3eFIQMKvv"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 <br>
+<br>
+
 The dataset for this project is pulled from Roboflow to make it easier for others to train the model without reuploading the dataset each time they want to train.
    
 ### Generating wts & cfg files for TensorRT engine
