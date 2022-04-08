@@ -37,6 +37,8 @@ Since YoloV5 is based on pytorch, we will first need to convert the outputs of o
 
 ```
 !python3 gen_wts_yoloV5.py -w /content/yolov5/runs/train/yolov5s_results/weights/best.pt -c /content/yolov5/models/custom_yolov5s.yaml
+
+# -w is the path to our best.pt model while -c is the file to our input yaml file.
 ```
 <br>
 
