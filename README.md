@@ -21,8 +21,10 @@ The dataset used in this project has been sourced from the [Open Lab on Human Ro
 
 The model was trained using YoloV5 on Gogle Collab. 
 <br>
+<br>
    <a href="https://colab.research.google.com/drive/14ETRA3gC7nVnPUXXj7qjund3eFIQMKvv"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 <br>
+The dataset for this project is pulled from Roboflow to make it easier for others to train the model without reuploading the dataset each time they want to train.
    
 ### Generating wts & cfg files for TensorRT engine
 ### Installing Deepstream 6.0 on Jetson Xavier
