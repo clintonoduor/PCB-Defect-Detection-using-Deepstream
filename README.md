@@ -29,7 +29,6 @@ The defects include:
 
 <br>
 <div align="center">
- 
  missing hole 
  </div>
  <div align="center">
