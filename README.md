@@ -30,10 +30,10 @@ The defects include:
 <br>
 <div align="center">
  
- *  missing hole 
+ missing hole 
  </div>
  <div align="center">
- *  mouse bite
+ mouse bite
  </div>
  *  open circuit
  *  short   
