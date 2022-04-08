@@ -82,6 +82,8 @@ The [NVIDIA DeepStream SDK](https://developer.nvidia.com/deepstream-sdk) deliver
 First install deepstream 6.0 using these [instructions](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_Quickstart.html).
 #### Editing Deepstream Config Files
 ```
+In the Config_infer_primary_yoloV5.txt, we replace the model-file and custom-network-config with the paths to our generated weight and config files respectively. We also change the num-detected-classes with the number of our classes which is 6 as shown below.
+
 [property]
 gpu-id=0
 net-scale-factor=0.0039215697906911373
