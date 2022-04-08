@@ -35,9 +35,14 @@ The defects include:
  <div align="center">
  mouse bite
  </div>
- *  open circuit
- *  short   
- *  spurious copper  
+ <div align="center">
+ open circuit
+ </div>
+ <div align="center">
+ short   
+ </div>
+ <div align="center">
+ spurious copper  
 
 </div>
 <br>
