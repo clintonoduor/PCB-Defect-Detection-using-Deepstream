@@ -38,7 +38,7 @@ The defects include:
  open circuit
  </div>
  <div align="center">
- short   
+ short circuit
  </div>
  <div align="center">
  spurious copper  
