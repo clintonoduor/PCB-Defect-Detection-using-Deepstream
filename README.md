@@ -61,7 +61,7 @@ The model was trained using YoloV5 on Google Collab, and dataset hosted in Robof
     </a>
  </div>
  <br>
- The dataset used in this project has been sourced from the [Open Lab on Human Robot Interaction](https://robotics.pkusz.edu.cn/resources/datasetENG/) of Peking University.
+ The dataset used in this project has been sourced from the [Open Lab on Human Robot Interaction](https://robotics.pkusz.edu.cn/resources/datasetENG) of Peking University.
 
    
 ### Generating wts & cfg files for TensorRT engine
