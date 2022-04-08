@@ -43,10 +43,12 @@ Since YoloV5 is based on pytorch, we will first need to convert the outputs of o
 ```
 # -w is the path to our best.pt model while -c is the file to our input yaml file.
 ```
-The script will output a wts and cfg file that we will put in our Deepstream-Yolo folder to build the TensorRT engine. The conversion script was cloned from [this repsitory](https://github.com/marcoslucianops/DeepStream-Yolo).
+The script will output a wts and cfg file that we will put in our Deepstream-Yolo folder to build the TensorRT engine. The conversion script was cloned from [this repository](https://github.com/marcoslucianops/DeepStream-Yolo).
 
-#### 5. Copy generated cfg and wts files to DeepStream-Yolo folder
-### Installing Deepstream 6.0 on Jetson Xavier
+### Configuring Deepstream
+#### Deepstream Installation
+First install deepstream 6.0 using these [instructions](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_Quickstart.html).
+#### Editing Deepstream Config Files
 ### Deepstream Config files
 ### Running the application
 ### Improving Perfomance
