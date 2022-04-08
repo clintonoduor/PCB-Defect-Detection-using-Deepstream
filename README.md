@@ -11,6 +11,7 @@ Manual visual inspection is one of the most complex and expensive tasks in PCB m
 </p>
 <br>
 <div>
+<br>
 
 This project aims to use computer vision specifically object detection to automatically detect 6 PCB Defects using YoloV5 and Deepstream SDK.
 
