@@ -19,7 +19,7 @@ The dataset used in this project has been sourced from the [Open Lab on Human Ro
 
 ### Model Training
 
-The model was trained using YoloV5 on Gogle Collab, and dataset hosted in Roboflow to make it easier for others to be able to retrain the model in Colab without the hussle of reuploading the dataset.YOLOv5 🚀 is a family of object detection architectures and models pretrained on the COCO dataset, and represents <a href="https://ultralytics.com">Ultralytics</a> open-source research into future vision AI methods, incorporating lessons learned and best practices evolved over thousands of hours of research and development.
+The model was trained using YoloV5 on Google Collab, and dataset hosted in Roboflow to make it easier for others to be able to train and reproduce the model in Colab without the hussle of re-uploading the data each time.YOLOv5 🚀 is a family of object detection architectures and models pretrained on the COCO dataset, and represents <a href="https://ultralytics.com">Ultralytics</a> open-source research into future vision AI methods, incorporating lessons learned and best practices evolved over thousands of hours of research and development.
 <br>
 Click on the Colab link below to reproduce the training script and model on your colab
 <div align="center">
@@ -28,9 +28,31 @@ Click on the Colab link below to reproduce the training script and model on your
     </a>
  </div>
 
-The dataset for this project is pulled from Roboflow to make it easier for others to train the model without reuploading the dataset each time they want to train.
    
 ### Generating wts & cfg files for TensorRT engine
+
+Since YoloV5 is based on pytorch, we will first need to convert the outputs of our trained model to a format that can easily be converted to TensorRT engine on the Jetson. To achieve this, 
+
+1.  Clone this repository and put the gen_wts_yoloV5.py file to the YoloV5 folder
+2.  Run the Python Script as shown below
+
+```
+!python3 gen_wts_yoloV5.py -w /content/yolov5/runs/train/yolov5s_results/weights/best.pt -c /content/yolov5/models/custom_yolov5s.yaml
+```
+* Input weights (.pt) file path **(required)**
+
+```
+-w or --weights
+```
+
+* Input cfg (.yaml) file path **(required)**
+
+```
+-c or --yaml
+```
+The script will output a wts and cfg file that will put in our Deepstream-Yolo folder to build the TensorRT engine
+
+#### 5. Copy generated cfg and wts files to DeepStream-Yolo folder
 ### Installing Deepstream 6.0 on Jetson Xavier
 ### Deepstream Config files
 ### Running the application
