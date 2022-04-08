@@ -52,7 +52,9 @@ The defects include:
 The model was trained using YoloV5 on Google Collab, and dataset hosted in Roboflow to make it easier for others to be able to train and reproduce the model in Colab without the hussle of re-uploading the data each time.YOLOv5 🚀 is a family of object detection architectures and models pretrained on the COCO dataset, and represents <a href="https://ultralytics.com">Ultralytics</a> open-source research into future vision AI methods, incorporating lessons learned and best practices evolved over thousands of hours of research and development.
 <br>
 <br>
-Click on the Colab link below to reproduce the training script and model of this project on your colab:
+ <div align="center">
+ Click on the Colab link below to reproduce the training script and model of this project on your colab:
+</div>
 <div align="center">
     <a href="https://colab.research.google.com/drive/14ETRA3gC7nVnPUXXj7qjund3eFIQMKvv">
         <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-colab-small.png" width="15%"/>
