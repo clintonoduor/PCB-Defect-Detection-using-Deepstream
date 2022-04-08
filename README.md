@@ -30,8 +30,8 @@ The defects include:
 <br>
 <div align="center">
  
-  missing hole 
-  mouse bite
+  *  missing hole 
+  *  mouse bite
   open circuit
   short    
   spurious copper  
