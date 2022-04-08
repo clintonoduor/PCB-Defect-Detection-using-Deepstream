@@ -9,11 +9,11 @@ This project aims to use computer vision specifically object detection to automa
 
 
 The defects include:
-1.  missing_hole 
-2.  mouse_bite
-3.  open_circuit
+1.  missing hole 
+2.  mouse bite
+3.  open circuit
 4.  short    
-5.  spurious_copper
+5.  spurious copper
 6.  
 
 
@@ -43,8 +43,6 @@ Since YoloV5 is based on pytorch, we will first need to convert the outputs of o
 ```
 # **-w** is the path to our best.pt model while **-c** is the file to our input yaml file.
 ```
-<br>
-
 The script will output a wts and cfg file that will put in our Deepstream-Yolo folder to build the TensorRT engine
 
 #### 5. Copy generated cfg and wts files to DeepStream-Yolo folder
