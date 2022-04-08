@@ -78,9 +78,9 @@ The script will output a wts and cfg file that we will put in our Deepstream-Yol
 
 ### Configuring Deepstream
 The [NVIDIA DeepStream SDK](https://developer.nvidia.com/deepstream-sdk) delivers a complete streaming analytics toolkit for AI based video and image understanding and multi-sensor processing. DeepStream SDK features hardware-accelerated building blocks, called plugins that bring deep neural networks and other complex processing tasks into a stream processing pipeline.
-#### Deepstream Installation
+##### Deepstream Installation
 First install deepstream 6.0 using these [instructions](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_Quickstart.html).
-#### Editing Deepstream Config Files
+##### Editing Deepstream Config Files
 ```
 In the Config_infer_primary_yoloV5.txt, we replace the model-file and custom-network-config with the paths to our generated weight and config files respectively. We also change the num-detected-classes with the number of our classes which is 6 as shown below.
 
@@ -109,7 +109,7 @@ engine-create-func-name=NvDsInferYoloCudaEngineGet
 [class-attrs-all]
 pre-cluster-threshold=0.5
 ```
-### Deepstream Config files
-### Running the application
+#### Running the application
+
 ### Improving Perfomance
 
