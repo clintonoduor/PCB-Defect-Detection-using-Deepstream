@@ -155,7 +155,7 @@ There are several techniques that could be used to increase the perfomance of th
 ```
 network-mode=0
 num-detected-classes=6
-interval=0
+interval=1
 gie-unique-id=1
 process-mode=1
 network-type=0
@@ -191,6 +191,17 @@ clock-color=1;0;0;0
 nvbuf-memory-type=0
 ```
 ##### 3. Reducing model precision
+
+Change network precision to fp16 by changing network-mode=0 to network-mode=2 in the  deepstream config infer file as shown below:
+
+```
+model-engine-file=model_b1_gpu0_fp32.engine
+#int8-calib-file=calib.table
+labelfile-path=labels.txt
+batch-size=1
+network-mode=2
+num-detected-classes=6
+```
 
 ##### 4. Always make sure the stream mux output width and height to the size of the input stream resolution
 
