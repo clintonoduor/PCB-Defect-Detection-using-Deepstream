@@ -1,10 +1,9 @@
 
-
+<div align="center">
 
 # PCB-Defect-Detection-using-Deepstream
-
-</div>
 <br>
+</div>
 
 Manual visual inspection is one of the most complex and expensive tasks for PCB manufacturing companies. Over the years, Printed Circuit Boards have become much smaller and more densely packed with components making manual visual inspection less scalable. With increased demands from the electronics industry, many defects go unnoticed which may lead to poor company reputation ,and reduced business.
 <br>
@@ -153,11 +152,10 @@ The application outputs a tiled display with on screen bounding boxes of the det
 <div align="center">
 
 [![Video demo on youtube](https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream/blob/main/pcbscreenshot.png?raw=true)](https://www.youtube.com/watch?v=op_TjAQFLfs)
- 
- ![Video demo on youtube](https://www.youtube.com/watch?v=op_TjAQFLfs)
- 
 
 <br>
-The model runs 
+</div>
+The model runs at an average of 51 FPS on a Jetson AGX Xavier meaning that, it can be configured to handle approximately 10 streams running at 5 FPS. 
+
 ### Improving Perfomance
 
