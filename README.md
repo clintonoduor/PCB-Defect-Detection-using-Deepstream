@@ -146,7 +146,7 @@ The application outputs a tiled display with on screen bounding boxes of the det
 </div>
 The model runs at an average of 51 FPS on a Jetson AGX Xavier, hence one xavier could be configured to handle approximately 10 streams running in parallel at 5 FPS. 
 
-### Improving Perfomance
+### Improving Perfomance tricks
 
 There are several techniques that could be used to increase the perfomance of the deepstream app:
 
@@ -190,3 +190,29 @@ clock-text-size=12
 clock-color=1;0;0;0
 nvbuf-memory-type=0
 ```
+##### 3. Reducing model precision
+
+##### 4. Always make sure the stream mux output width and height to the size of the input stream resolution
+
+```
+[streammux]
+##Boolean property to inform muxer that sources are live
+live-source=1
+batch-size=1
+##time out in usec, to wait after the first buffer is available
+##to push the batch even if the complete batch is not formed
+batched-push-timeout=40000
+## Set muxer output width and height
+width=1280
+height=720
+```
+
+### Future works
+
+1. Implement the project using deepstream python bindings
+2. Performing deepstream analytics
+
+### Acknowledgement
+
+1. Open Lab on Human Robot Interaction of Peking University for use of dataset.
+2. https://github.com/marcoslucianops/DeepStream-Yolo
