@@ -5,7 +5,7 @@
 <br>
 </div>
 
-Manual visual inspection is one of the most complex and expensive tasks for PCB manufacturing companies. Over the years, Printed Circuit Boards have become much smaller and more densely packed with components making manual visual inspection less scalable. With increased demands from the electronics industry, many defects go unnoticed which may lead to poor company reputation ,and reduced business.
+Manual visual inspection is one of the most complex and expensive tasks for PCB manufacturing companies. Over the years, Printed Circuit Boards have become much smaller and more densely packed with components making manual visual inspection less scalable. With increased demands from the electronics industry, many defects go unnoticed which may lead to poor company reputation ,and reduced business. The figure below shows an image of a PCB automated optical inspection procedure at PCBWay.
 <br>
 
 <div align="center">
@@ -15,7 +15,11 @@ Manual visual inspection is one of the most complex and expensive tasks for PCB 
 </p>
 </div>
 <br>
+<div align="center">
+image source: https://www.etechnophiles.com/pcb-testing-methods-and-properties-7-ways-to-ensure-best-quality-pcbs/
+</div>
 
+<br>
 
  This project uses deeplearning with object detection to automatically detect 6 PCB Defects using YoloV5 and Deepstream SDK running on an Nvidia jetson AGX Xavier. 
 
