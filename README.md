@@ -137,6 +137,8 @@ cudadec-memtype=0
 deepstream-app -c deepstream_app_config.txt
 ```
 
+**NB:** This dataset used for training this model was synthetic hence the tarined model cannot be validated using real world data. However the instructions below could be used to run the model using a USB cam or CSI camera:
+
 ###### Running application using a Webcam
 
 To run the application using a USB cam, run the below command on your terminal:
