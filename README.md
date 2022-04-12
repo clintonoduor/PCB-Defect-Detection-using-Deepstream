@@ -148,3 +148,45 @@ The model runs at an average of 51 FPS on a Jetson AGX Xavier, hence one xavier 
 
 ### Improving Perfomance
 
+There are several techniques that could be used to increase the perfomance of the deepstream app:
+
+##### 1.  Increasing the number of interval in the infer config file
+
+```
+network-mode=0
+num-detected-classes=6
+interval=0
+gie-unique-id=1
+process-mode=1
+network-type=0
+```
+##### 2.  Disable tiles & on screen perfomance when not needed
+
+To achieve this, you just need to go to the deepstream-app_config.txtfile and set enable = 0  for [tiled-display] [osd] as shown below:
+
+```
+[tiled-display]
+enable=0
+rows=1
+columns=1
+width=1280
+height=720
+gpu-id=0
+nvbuf-memory-type=0
+```
+```
+[osd]
+enable=0
+gpu-id=0
+border-width=1
+text-size=15
+text-color=1;1;1;1;
+text-bg-color=0.3;0.3;0.3;1
+font=Serif
+show-clock=0
+clock-x-offset=800
+clock-y-offset=820
+clock-text-size=12
+clock-color=1;0;0;0
+nvbuf-memory-type=0
+```
