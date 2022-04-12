@@ -23,24 +23,13 @@ Manual visual inspection is one of the most complex and expensive tasks for PCB 
 
 The defects include:
 
-<br>
-<div align="center">
- missing hole 
- </div>
- <div align="center">
- mouse bite
- </div>
- <div align="center">
- open circuit
- </div>
- <div align="center">
- short circuit
- </div>
- <div align="center">
- spurious copper  
-
+* Missing hole
+* Mouse bite
+* Open circuit
+* Short circuit
+* Spurious copper
 </div>
-<br>
+
 
 
 ### Model Training
@@ -155,7 +144,7 @@ The application outputs a tiled display with on screen bounding boxes of the det
 
 <br>
 </div>
-The model runs at an average of 51 FPS on a Jetson AGX Xavier meaning that, it can be configured to handle approximately 10 streams running at 5 FPS. 
+The model runs at an average of 51 FPS on a Jetson AGX Xavier, hence one xavier could be configured to handle approximately 10 streams running in parallel at 5 FPS. 
 
 ### Improving Perfomance
 
