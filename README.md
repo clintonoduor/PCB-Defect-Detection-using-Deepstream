@@ -7,6 +7,7 @@
 
 Manual visual inspection is one of the most complex and expensive tasks for PCB manufacturing companies. Over the years, Printed Circuit Boards have become much smaller and more densely packed with components making manual visual inspection less scalable. With increased demands from the electronics industry, many defects go unnoticed which may lead to poor company reputation ,and reduced business. The figure below shows an image of a PCB automated optical inspection procedure at PCBWay.
 <br>
+<br>
 
 <div align="center">
 <p>
