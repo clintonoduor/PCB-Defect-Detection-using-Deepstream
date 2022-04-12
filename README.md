@@ -154,8 +154,10 @@ The application outputs a tiled display with on screen bounding boxes of the det
 
 [![Video demo on youtube](https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream/blob/main/pcbscreenshot.png?raw=true)](https://www.youtube.com/watch?v=op_TjAQFLfs)
  
+ ![Video demo on youtube](https://www.youtube.com/watch?v=op_TjAQFLfs)
+ 
 
 <br>
-
+The model runs 
 ### Improving Perfomance
 
