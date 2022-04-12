@@ -11,18 +11,19 @@
 </div>
 <br>
 
-Manual visual inspection is one of the most complex and expensive tasks in PCB manufacturing companies. Over the years, Printed Circuit Boards have become much smaller and more densely packed with components making manual visual inspection less scalable. With increased demands from the electronics industry, many defects go unnoticed that may lead to poor company reputation ,and reduced number of contracts.
+Manual visual inspection is one of the most complex and expensive tasks for PCB manufacturing companies. Over the years, Printed Circuit Boards have become much smaller and more densely packed with components making manual visual inspection less scalable. With increased demands from the electronics industry, many defects go unnoticed which may lead to poor company reputation ,and reduced business.
+<br>
 
 <div align="center">
 <p>
-   <a align="left" href="https://ultralytics.com/yolov5" target="_blank">
+   <a align="left" href="https://www.etechnophiles.com/wp-content/uploads/2021/05/1730328404807.jpg" target="_blank">
    <img width="450" src="https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream/blob/main/optical.jpg"></a>
 </p>
 </div>
 <br>
 
 
- This project aims to use computer vision specifically object detection to automatically detect 6 PCB Defects using YoloV5 and Deepstream SDK. 
+ This project uses deeplearning with object detection to automatically detect 6 PCB Defects using YoloV5 and Deepstream SDK running on an Nvidia jetson AGX Xavier. 
 
 
 
@@ -50,11 +51,13 @@ The defects include:
 
 ### Model Training
 
-The model was trained using YoloV5 on Google Collab, and dataset hosted in Roboflow to make it easier for others to be able to train and reproduce the model in Colab without the hussle of re-uploading the data each time.YOLOv5 🚀 is a family of object detection architectures and models pretrained on the COCO dataset, and represents <a href="https://ultralytics.com">Ultralytics</a> open-source research into future vision AI methods, incorporating lessons learned and best practices evolved over thousands of hours of research and development.
-<br>
-<br>
+The model was trained using YoloV5 on Google Collab. The dataset used is hosted in Roboflow to make it easier for others to be able to train and reproduce the model in Colab without the hussle of re-uploading the data. 
 
- Click on the Colab link below to reproduce the training script and model of this project on your colab:
+YoloV5 🚀 is a family of object detection architectures and models pretrained on the COCO dataset, and represents <a href="https://ultralytics.com">Ultralytics</a> open-source research into future vision AI methods, incorporating lessons learned and best practices evolved over thousands of hours of research and development. 
+
+The choice to use YoloV5 was based on its inherent fast speed, smaller size, and its ability to learn to auto tune anchor boxes based on the distribution of the training set.
+
+ The full code used to train the model for this project can be found by clicking the Colab icon below:
 
 <div align="center">
     <a href="https://colab.research.google.com/drive/14ETRA3gC7nVnPUXXj7qjund3eFIQMKvv">
@@ -62,7 +65,8 @@ The model was trained using YoloV5 on Google Collab, and dataset hosted in Robof
     </a>
  </div>
  <br>
- The dataset used in this project has been sourced from the <a href="https://robotics.pkusz.edu.cn/resources/datasetENG">Open Lab on Human Robot Interaction</a> of Peking University.
+
+ The dataset used was sourced from the <a href="https://robotics.pkusz.edu.cn/resources/datasetENG">Open Lab on Human Robot Interaction</a> of Peking University.
 
    
 ### Generating wts & cfg files for TensorRT engine
@@ -112,5 +116,39 @@ pre-cluster-threshold=0.5
 ```
 ##### Running the application
 
+###### Running application using a sample video (.MP4)
+
+1. Go to deepstream_app_config.txt > Source 0 then edit the URI with the path of your sample MP4 video as shown below: 
+   
+
+```
+[source0]
+enable=1
+type=3
+uri=file:///opt/nvidia/deepstream/deepstream/samples/streams/pcb2.mp4
+num-sources=1
+gpu-id=0
+cudadec-memtype=0
+```
+
+2.  Run the command below on your terminal
+
+```
+deepstream-app -c deepstream_app_config.txt
+```
+
+###### Running application using a Webcam
+
+To run the application using a USB cam, run the below command on your terminal:
+```
+deepstream-app -c deepstream_app_config_USB.txt
+```
+
+###### Running application using a CSI cam
+
+To run the application using a CSI cam, run the command below on your terminal:
+```
+deepstream-app -c deepstream_app_config(CSI).txt
+```
 ### Improving Perfomance
 
