@@ -1,9 +1,4 @@
-<div align="center">
 
-[![Everything Is AWESOME](https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream/blob/main/pcbscreenshot.png?raw=true)](https://www.youtube.com/watch?v=op_TjAQFLfs)
- 
-
-<br>
 
 
 # PCB-Defect-Detection-using-Deepstream
@@ -118,7 +113,7 @@ pre-cluster-threshold=0.5
 
 ###### Running application using a sample video (.MP4)
 
-1. Go to deepstream_app_config.txt > Source 0 then edit the URI with the path of your sample MP4 video as shown below: 
+1. Go to **deepstream_app_config.txt > [Source 0]** then edit the URI with the path of your sample MP4 video as shown below: 
    
 
 ```
@@ -152,5 +147,15 @@ To run the application using a CSI cam, run the command below on your terminal:
 ```
 deepstream-app -c deepstream_app_config(CSI).txt
 ```
+
+The application outputs a tiled display with on screen bounding boxes of the detected defects as shown in the image below:
+
+<div align="center">
+
+[![Video demo on youtube](https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream/blob/main/pcbscreenshot.png?raw=true)](https://www.youtube.com/watch?v=op_TjAQFLfs)
+ 
+
+<br>
+
 ### Improving Perfomance
 
