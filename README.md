@@ -59,7 +59,7 @@ The choice to use YoloV5 was based on its inherent fast speed, smaller size, and
 
 #### Training Results
 
-Metrics were closely monitored and tracked using Weights & Biases as shown in the images below:
+Metrics were closely monitored and tracked using Weights & Biases for 1083 epochs as shown in the images below:
 
 <br>
 
@@ -256,18 +256,21 @@ height=720
 ```
 <div align="center">
 
-### Future works
-
-</div>
-
-1. Implement the project using deepstream python bindings
-2. Performing analytics using deepstream analytics
-
-<div align="center">
-
 ### Acknowledgement
 
 </div>
 
 1. Open Lab on Human Robot Interaction of Peking University for use of dataset.
 2. Passing custom YoloV5 models for deepstream applications: https://github.com/marcoslucianops/DeepStream-Yolo
+
+
+<div align="center">
+
+### Future works
+
+</div>
+
+1. Implement the project using deepstream python bindings
+2. Performing analytics using deepstream analytics
+3. Train using real PCB images & defects
+
