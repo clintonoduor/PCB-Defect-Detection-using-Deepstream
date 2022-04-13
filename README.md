@@ -97,9 +97,9 @@ Metrics were closely monitored and tracked using Weights & Biases for 1083 epoch
    
 ### Generating wts & cfg files for TensorRT engine
 
-NVIDIA® TensorRT™, is a machine learning framework and SDK for high-performance deep learning inference for GPU accelerated worklods such intelligent video analytics on jetson devices. It includes a deep learning inference optimizer and runtime that delivers low latency and high throughput for inference.
+[NVIDIA® TensorRT™](https://developer.nvidia.com/tensorrt), is a machine learning framework and SDK for high-performance deep learning inference for GPU accelerated workloads such as intelligent video analytics on jetson devices. It includes a deep learning inference optimizer and runtime that delivers low latency and high throughput for inference.
 
- Since YoloV5 is based on pytorch, we will first need to convert our trained model to a format that can be easily converted to TensorRT engine when starting the deepstream application on the Jetson. To do this,we first put the gen_wts_yoloV5.py file to the YoloV5 folder and run the following script:
+ Since YoloV5 is based on Pytorch, we will first need to convert our trained model to a format that can be easily converted to TensorRT engine when starting the deepstream application on the Jetson Xavier. To do this,we first put the gen_wts_yoloV5.py file to the YoloV5 folder and run the following script:
 
 ```
 !python3 gen_wts_yoloV5.py -w /content/yolov5/runs/train/yolov5s_results/weights/best.pt -c /content/yolov5/models/custom_yolov5s.yaml
@@ -143,6 +143,17 @@ engine-create-func-name=NvDsInferYoloCudaEngineGet
 pre-cluster-threshold=0.5
 ```
 ##### Running the application
+
+First compile the application using:
+
+```
+CUDA_VER=11.4 make -C nvdsinfer_custom_impl_Yolo
+```
+Then boost your Jetson clocks using the following commands:
+```
+$ sudo nvpmodel -m 0
+$ sudo jetson_clocks
+```
 
 ###### Running application using a sample video (.MP4)
 
