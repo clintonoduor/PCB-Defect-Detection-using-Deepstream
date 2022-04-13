@@ -12,7 +12,7 @@ Manual visual inspection is one of the most complex and expensive tasks for PCB 
 <div align="center">
 <p>
    <a align="left" href="https://www.etechnophiles.com/wp-content/uploads/2021/05/1730328404807.jpg" target="_blank">
-   <img width="450" src="https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream/blob/main/optical.jpg"></a>
+   <img width="450" src="https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream/blob/main/assets/optical.jpg"></a>
 </p>
 </div>
 <br>
@@ -69,12 +69,13 @@ Metrics were closely monitored and tracked using Weights & Biases as shown in th
    <img width="450" src="https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream/blob/main/optical.jpg"></a>
 </p>
 </div>
+
 ##### Precision
 
 <div align="center">
 <p>
  
-   <img width="450" src="https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream/blob/main/optical.jpg"></a>
+   <img width="450" src="https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream/blob/main/assets/precision.svg"></a>
 </p>
 </div>
 
@@ -83,7 +84,7 @@ Metrics were closely monitored and tracked using Weights & Biases as shown in th
 <div align="center">
 <p>
  
-   <img width="450" src="https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream/blob/main/optical.jpg"></a>
+   <img width="450" src="https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream/blob/main/assets/recall.svg"></a>
 </p>
 </div>
    
@@ -175,7 +176,7 @@ The application outputs a tiled display with on screen bounding boxes of the det
 
 <div align="center">
 
-[![Video demo on youtube](https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream/blob/main/pcbscreenshot.png?raw=true)](https://www.youtube.com/watch?v=op_TjAQFLfs)
+[![Video demo on youtube](https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream/blob/main/assets/pcbscreenshot.png?raw=true)](https://www.youtube.com/watch?v=op_TjAQFLfs)
 
 <br>
 </div>
