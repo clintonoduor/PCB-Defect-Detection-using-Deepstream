@@ -61,7 +61,7 @@ The choice to use YoloV5 was based on its inherent fast speed, smaller size, and
 
 Metrics were closely monitored and tracked using Weights & Biases as shown in the images below:
 
-
+<br>
 
 <div align="center">
 <p>
