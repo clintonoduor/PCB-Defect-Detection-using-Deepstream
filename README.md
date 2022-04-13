@@ -42,7 +42,7 @@ The defects include:
    
 2. [TensorRT engine generation](https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream#generating-wts--cfg-files-for-tensorrt-engine)
 3. [Configuring Deepstream app](https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream#configuring-deepstream)
-4. [Optimizing Deepstream app](https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream#improving-perfomance-tricks)
+4. [Optimizing Deepstream app for perfomance](https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream#improving-perfomance-tricks)
 
 ### Model Training
 
@@ -97,7 +97,9 @@ Metrics were closely monitored and tracked using Weights & Biases for 1083 epoch
    
 ### Generating wts & cfg files for TensorRT engine
 
-Since YoloV5 is based on pytorch, we will first need to convert the outputs of our trained model to a format that can easily be converted to TensorRT engine on the Jetson. To do this,we first put the gen_wts_yoloV5.py file to the YoloV5 folder and run the following script:
+NVIDIA® TensorRT™, is a machine learning framework and SDK for high-performance deep learning inference for GPU accelerated worklods such intelligent video analytics on jetson devices. It includes a deep learning inference optimizer and runtime that delivers low latency and high throughput for inference.
+
+ Since YoloV5 is based on pytorch, we will first need to convert our trained model to a format that can be easily converted to TensorRT engine when starting the deepstream application on the Jetson. To do this,we first put the gen_wts_yoloV5.py file to the YoloV5 folder and run the following script:
 
 ```
 !python3 gen_wts_yoloV5.py -w /content/yolov5/runs/train/yolov5s_results/weights/best.pt -c /content/yolov5/models/custom_yolov5s.yaml
@@ -189,7 +191,7 @@ The application outputs a tiled display with on screen bounding boxes of the det
 </div>
 The model runs at an average of 51 FPS on a Jetson AGX Xavier, hence one xavier could be configured to handle approximately 10 streams running in parallel at 5 FPS. 
 
-### ptimizin Deepstream app for Perfomance 
+### Optimizing Deepstream app for Perfomance 
 
 There are several techniques that could be used to increase the perfomance of the deepstream app:
 
