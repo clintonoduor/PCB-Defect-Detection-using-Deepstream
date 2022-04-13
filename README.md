@@ -38,11 +38,11 @@ The defects include:
 
 ### Steps
 
-1. ![Model training](https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream#model-training)
+1. [Model training](https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream#model-training)
    
-2. ![TensorRT engine generation](https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream#generating-wts--cfg-files-for-tensorrt-engine)
-3. ![Configuring Deepstream app](https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream#configuring-deepstream)
-4. ![Optimizing Deepstream app](https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream#improving-perfomance-tricks)
+2. [TensorRT engine generation](https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream#generating-wts--cfg-files-for-tensorrt-engine)
+3. [Configuring Deepstream app](https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream#configuring-deepstream)
+4. [Optimizing Deepstream app](https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream#improving-perfomance-tricks)
 
 ### Model Training
 
@@ -189,7 +189,7 @@ The application outputs a tiled display with on screen bounding boxes of the det
 </div>
 The model runs at an average of 51 FPS on a Jetson AGX Xavier, hence one xavier could be configured to handle approximately 10 streams running in parallel at 5 FPS. 
 
-### Improving Perfomance tricks
+### ptimizin Deepstream app for Perfomance 
 
 There are several techniques that could be used to increase the perfomance of the deepstream app:
 
