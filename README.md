@@ -107,10 +107,10 @@ Metrics were closely monitored and tracked using Weights & Biases for 1083 epoch
 ```
 # -w is the path to our best.pt model while -c is the file to our input yaml file.
 ```
-The script will output a wts and cfg file that we will put in our Deepstream-Yolo folder to build the TensorRT engine. The conversion script was cloned from [this repository](https://github.com/marcoslucianops/DeepStream-Yolo).
+The script will output a wts and cfg file that we will put in our Deepstream-Yolo folder to build the TensorRT engine.
 
 ### Configuring Deepstream
-The [NVIDIA DeepStream SDK](https://developer.nvidia.com/deepstream-sdk) delivers a complete streaming analytics toolkit for AI based video and image understanding and multi-sensor processing. DeepStream SDK features hardware-accelerated building blocks, called plugins that bring deep neural networks and other complex processing tasks into a stream processing pipeline.
+The [NVIDIA DeepStream SDK](https://developer.nvidia.com/deepstream-sdk) delivers a complete streaming analytics toolkit for AI based video and image understanding and multi-sensor processing. DeepStream SDK features hardware-accelerated building blocks called plugins, that bring deep neural networks and other complex processing tasks into a stream processing pipeline.
 ##### Deepstream Installation
 First install deepstream 6.0 using these [instructions](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_Quickstart.html).
 ##### Editing Deepstream Config Files
