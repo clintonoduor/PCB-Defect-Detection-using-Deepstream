@@ -61,7 +61,7 @@ The choice to use YoloV5 was based on its inherent fast speed, smaller size, and
 
 Metrics were closely monitored and tracked using Weights & Biases as shown in the images below:
 
-##### mAP
+
 
 <div align="center">
 <p>
@@ -70,7 +70,7 @@ Metrics were closely monitored and tracked using Weights & Biases as shown in th
 </p>
 </div>
 
-##### Precision
+<br>
 
 <div align="center">
 <p>
@@ -78,8 +78,9 @@ Metrics were closely monitored and tracked using Weights & Biases as shown in th
    <img width="450" src="https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream/blob/main/assets/precision.svg"></a>
 </p>
 </div>
+<br>
 
-##### Recall
+
 
 <div align="center">
 <p>
