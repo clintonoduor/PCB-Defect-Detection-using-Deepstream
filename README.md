@@ -33,6 +33,7 @@ The defects include:
 * Open circuit
 * Short circuit
 * Spurious copper
+* spur
 </div>
 
 
@@ -56,6 +57,35 @@ The choice to use YoloV5 was based on its inherent fast speed, smaller size, and
 
  The dataset used was sourced from the <a href="https://robotics.pkusz.edu.cn/resources/datasetENG">Open Lab on Human Robot Interaction</a> of Peking University.
 
+#### Training Results
+
+Metrics were closely monitored and tracked using Weights & Biases as shown in the images below:
+
+##### mAP
+
+<div align="center">
+<p>
+ 
+   <img width="450" src="https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream/blob/main/optical.jpg"></a>
+</p>
+</div>
+##### Precision
+
+<div align="center">
+<p>
+ 
+   <img width="450" src="https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream/blob/main/optical.jpg"></a>
+</p>
+</div>
+
+##### Recall
+
+<div align="center">
+<p>
+ 
+   <img width="450" src="https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream/blob/main/optical.jpg"></a>
+</p>
+</div>
    
 ### Generating wts & cfg files for TensorRT engine
 
@@ -226,9 +256,9 @@ height=720
 ### Future works
 
 1. Implement the project using deepstream python bindings
-2. Performing deepstream analytics
+2. Performing analytics using deepstream analytics
 
 ### Acknowledgement
 
 1. Open Lab on Human Robot Interaction of Peking University for use of dataset.
-2. https://github.com/marcoslucianops/DeepStream-Yolo
+2. Passing custom YoloV5 models for deepstream applications: https://github.com/marcoslucianops/DeepStream-Yolo
