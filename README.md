@@ -66,7 +66,7 @@ Metrics were closely monitored and tracked using Weights & Biases as shown in th
 <div align="center">
 <p>
  
-   <img width="450" src="https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream/blob/main/optical.jpg"></a>
+   <img width="450" src="https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream/blob/main/assets/map.svg"></a>
 </p>
 </div>
 
@@ -75,7 +75,7 @@ Metrics were closely monitored and tracked using Weights & Biases as shown in th
 <div align="center">
 <p>
  
-   <img width="450" src="https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream/blob/main/assets/precision.svg"></a>
+   <img width="450" src="https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream/blob/main/assets/precision.png"></a>
 </p>
 </div>
 <br>
