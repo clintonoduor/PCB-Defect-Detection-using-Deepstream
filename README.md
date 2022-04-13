@@ -36,11 +36,17 @@ The defects include:
 * spur
 </div>
 
+### Steps
 
+1. ![Model training](https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream#model-training)
+   
+2. ![TensorRT engine generation](https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream#generating-wts--cfg-files-for-tensorrt-engine)
+3. ![Configuring Deepstream app](https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream#configuring-deepstream)
+4. ![Optimizing Deepstream app](https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream#improving-perfomance-tricks)
 
 ### Model Training
 
-The model was trained using YoloV5 on Google Collab. The dataset used is hosted in Roboflow to make it easier for others to be able to train and reproduce the model in Colab without the hussle of re-uploading the data. 
+The model was trained using YoloV5 on Google Colab. The dataset used is hosted on Roboflow to make it easier for others to be able to train and reproduce the model in Colab without the hussle of re-uploading the data. 
 
 YoloV5 🚀 is a family of object detection architectures and models pretrained on the COCO dataset, and represents <a href="https://ultralytics.com">Ultralytics</a> open-source research into future vision AI methods, incorporating lessons learned and best practices evolved over thousands of hours of research and development. 
 
@@ -157,7 +163,7 @@ cudadec-memtype=0
 deepstream-app -c deepstream_app_config.txt
 ```
 
-**NB:** This dataset used for training this model was synthetic hence the tarined model cannot be validated using real world data. However the instructions below could be used to run the model using a USB cam or CSI camera:
+**NB:** This dataset used for training this model was synthetic hence the trained model cannot be validated using real world data. However the instructions below could be used to run the model using a USB cam or CSI camera:
 
 ###### Running application using a Webcam
 
@@ -272,5 +278,5 @@ height=720
 
 1. Implement the project using deepstream python bindings
 2. Performing analytics using deepstream analytics
-3. Train using real PCB images & defects
+3. Train using real PCB images with defects
 
