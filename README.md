@@ -254,13 +254,20 @@ batched-push-timeout=40000
 width=1280
 height=720
 ```
+<div align="center">
 
 ### Future works
+
+</div>
 
 1. Implement the project using deepstream python bindings
 2. Performing analytics using deepstream analytics
 
+<div align="center">
+
 ### Acknowledgement
+
+</div>
 
 1. Open Lab on Human Robot Interaction of Peking University for use of dataset.
 2. Passing custom YoloV5 models for deepstream applications: https://github.com/marcoslucianops/DeepStream-Yolo
